@@ -56,8 +56,8 @@ jobs:
       with:
         name: java-app
     - name: Loggind in to Docker
-      run: docker login ghcr.io -u Schmidt8 -p ${{ github.token }}
+      run: docker login ghcr.io -u schmidt8 -p ${{ github.token }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/Schmidt8/cubix/cloudnative/demo:actions
+      run: docker build . --file Dockerfile --tag ghcr.io/schmidt8/cubix/cloudnative/demo:actions
     - name: Publishing the Docker image
-      run: docker push ghcr.io/Schmidt8/cubix/cloudnative/demo:actions
+      run: docker push ghcr.io/schmidt8/cubix/cloudnative/demo:actions
